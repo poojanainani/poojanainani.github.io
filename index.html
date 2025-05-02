@@ -1,102 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pooja Nainani | Data Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #ffffff, #f0f4f8);
       margin: 0;
-      padding: 0;
+      background: linear-gradient(135deg, #e6f0ff, #fefefe);
       color: #333;
-    }
-    .container {
-      max-width: 960px;
-      margin: auto;
-      padding: 2rem;
     }
     header {
       text-align: center;
-      padding-bottom: 2rem;
+      padding: 3rem 1rem 2rem;
+      background: #007acc;
+      color: white;
     }
-    h1 {
+    header h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #007acc;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    }
+    .card h3 {
+      margin-top: 0;
       color: #2c3e50;
     }
-    p.tagline {
-      font-size: 1.2rem;
-      color: #555;
+    .card p {
+      font-size: 0.95rem;
     }
-    .section {
-      margin-bottom: 3rem;
-    }
-    .section h2 {
-      font-size: 1.8rem;
-      color: #34495e;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.3rem;
-    }
-    .project {
-      background: #fff;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      margin-bottom: 1rem;
-    }
-    .project strong {
-      font-size: 1.1rem;
-    }
-    a {
+    .card a {
+      display: inline-block;
+      margin-top: 0.8rem;
       color: #007acc;
+      font-weight: bold;
       text-decoration: none;
     }
-    a:hover {
+    .card a:hover {
       text-decoration: underline;
+    }
+    .contact {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    .contact p a {
+      color: #007acc;
+      text-decoration: none;
+      font-weight: 500;
     }
     footer {
       text-align: center;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
+      margin: 3rem 0 1rem;
       color: #888;
-      margin-top: 4rem;
     }
   </style>
 </head>
 <body>
+
+  <header>
+    <h1>Pooja Nainani</h1>
+    <p>Data Analyst & Data Engineer | Transforming data into business value</p>
+  </header>
+
   <div class="container">
-    <header>
-      <h1>👋 Hi, I'm Pooja Nainani</h1>
-      <p class="tagline">Data Analyst & Data Engineer | Transforming data into decisions</p>
-    </header>
-
-    <div class="section">
-      <h2>📊 Featured Projects</h2>
-
-      <div class="project">
-        <strong>A/B Test Analysis (Python)</strong><br>
-        <p>Statistical testing and business impact evaluation using Python and hypothesis testing.</p>
+    <h2>📊 Featured Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>A/B Testing Analysis (Python)</h3>
+        <p>Statistical testing and impact analysis using Python, pandas, and hypothesis testing.</p>
         <a href="ab-testing.html">🔗 View Project</a>
       </div>
 
-      <div class="project">
-        <strong>Power BI Dashboard</strong><br>
-        <p>Interactive dashboard showing sales insights with filters, slicers, and visuals.</p>
-        <a href="#">🔗 View Dashboard (Coming Soon)</a>
+      <div class="card">
+        <h3>Power BI Dashboard</h3>
+        <p>Interactive dashboard showing business KPIs using drill-through, slicers, and custom visuals.</p>
+        <a href="#">🔗 Coming Soon</a>
+      </div>
+
+      <div class="card">
+        <h3>ETL Pipeline with Airflow</h3>
+        <p>Cloud-based pipeline with Python, SQL, and Apache Airflow — automating data workflows.</p>
+        <a href="#">🔗 Coming Soon</a>
       </div>
     </div>
 
-    <div class="section">
+    <div class="contact">
       <h2>📬 Contact</h2>
       <p>Email: <a href="mailto:pooja.nainani01@gmail.com">pooja.nainani01@gmail.com</a></p>
       <p>LinkedIn: <a href="https://linkedin.com/in/pooja-nainani" target="_blank">linkedin.com/in/pooja-nainani</a></p>
       <p>GitHub: <a href="https://github.com/poojanainani" target="_blank">github.com/poojanainani</a></p>
     </div>
-
-    <footer>
-      &copy; 2025 Pooja Nainani · Built with HTML & GitHub Pages
-    </footer>
   </div>
+
+  <footer>
+    &copy; 2025 Pooja Nainani · Built with 💙 and GitHub Pages
+  </footer>
+
 </body>
 </html>
