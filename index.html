@@ -1,133 +1,657 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pooja Nainani | Data Portfolio</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: linear-gradient(135deg, #e6f0ff, #fefefe);
-      color: #333;
-    }
-    header {
-      text-align: center;
-      padding: 3rem 1rem 2rem;
-      background: #007acc;
-      color: white;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 2rem;
-    }
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      color: #007acc;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-    }
-    .card {
-      background: white;
-      border-radius: 10px;
-      padding: 1.5rem;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
-    }
-    .card h3 {
-      margin-top: 0;
-      color: #2c3e50;
-    }
-    .card p {
-      font-size: 0.95rem;
-    }
-    .card a {
-      display: inline-block;
-      margin-top: 0.8rem;
-      color: #007acc;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    .card a:hover {
-      text-decoration: underline;
-    }
-    .contact {
-      margin-top: 3rem;
-      text-align: center;
-    }
-    .contact p a {
-      color: #007acc;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.85rem;
-      margin: 3rem 0 1rem;
-      color: #888;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pooja Nainani | Data Analyst | Business Intelligence | Data & AI</title>
+
+    <meta name="description"
+        content="Pooja Nainani — Data Analyst specializing in SQL, Python, Power BI, Business Intelligence and AI-powered analytics.">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>Pooja Nainani</h1>
-    <p>Data Analyst & Data Engineer | Transforming data into business value</p>
-  </header>
+    <!-- ================================
+         NAVIGATION
+    ================================= -->
 
-  <div class="container">
-    <h2>📊 Featured Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>A/B Testing Analysis (Python)</h3>
-        <p>Statistical testing and impact analysis using Python, pandas, and hypothesis testing.</p>
-        <a href="ab-testing.html">🔗 View Project</a>
-      </div>
+    <header class="navbar">
 
-      <div class="card">
-        <h3>Power BI Dashboard</h3>
-        <p>Interactive dashboard showing business KPIs using drill-through, slicers, and custom visuals.</p>
-        <a href="#">🔗 Coming Soon</a>
-      </div>
+        <div class="container nav-content">
 
-      <div class="card">
-        <h3>ETL Pipeline with Airflow</h3>
-        <p>Cloud-based pipeline with Python, SQL, and Apache Airflow — automating data workflows.</p>
-        <a href="#">🔗 Coming Soon</a>
-      </div>
-    </div>
+            <a href="#" class="logo">Pooja Nainani</a>
 
-    <div class="contact">
-      <h2>📬 Contact</h2>
-      <p>Email: <a href="mailto:pooja.nainani01@gmail.com">pooja.nainani01@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/pooja-nainani" target="_blank">linkedin.com/in/pooja-nainani</a></p>
-      <p>GitHub: <a href="https://github.com/poojanainani" target="_blank">github.com/poojanainani</a></p>
-    </div>
-  </div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#what-i-do">What I Do</a>
+                <a href="#contact">Contact</a>
+            </nav>
 
-  <footer>
-    &copy; 2025 Pooja Nainani · Built with 💙 and GitHub Pages
-  </footer>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- ================================
+             HERO
+        ================================= -->
+
+        <section class="hero">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="eyebrow">
+                        DATA ANALYST · BUSINESS INTELLIGENCE · DATA & AI
+                    </p>
+
+                    <h1>
+                        Turning data into
+                        <span>actionable insights.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        I'm Pooja Nainani, a Data Analyst with 4+ years of
+                        experience using SQL, Python, Power BI and modern data
+                        technologies to solve business problems and support
+                        better decision-making.
+                    </p>
+
+                    <p class="location">
+                        📍 Hamburg, Germany · Open to Germany & international opportunities
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="button primary">
+                            View Projects
+                        </a>
+
+                        <a href="https://github.com/poojanainani"
+                           class="button secondary"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-card">
+
+                    <div class="card-label">
+                        CURRENT FOCUS
+                    </div>
+
+                    <h2>
+                        AI-Powered Analytics
+                    </h2>
+
+                    <p>
+                        Building practical analytics solutions that combine
+                        traditional Business Intelligence with AI and
+                        natural-language interfaces.
+                    </p>
+
+                    <div class="tech-list">
+
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>PostgreSQL</span>
+                        <span>LLMs</span>
+                        <span>Docker</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             ABOUT
+        ================================= -->
+
+        <section id="about" class="section">
+
+            <div class="container">
+
+                <p class="section-label">
+                    ABOUT
+                </p>
+
+                <h2 class="section-title">
+                    Data-driven problem solving with a business mindset.
+                </h2>
+
+                <div class="about-grid">
+
+                    <p>
+                        I specialize in transforming complex datasets into
+                        clear, actionable business insights. My experience
+                        includes KPI development, dashboarding, reporting
+                        automation, data quality, performance analysis and
+                        stakeholder collaboration.
+                    </p>
+
+                    <p>
+                        My background spans Business Intelligence, data
+                        analysis, data warehousing and cloud analytics.
+                        I am also expanding into analytics engineering and
+                        AI-powered analytics through hands-on projects using
+                        PostgreSQL, APIs, Docker and LLMs.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             SKILLS
+        ================================= -->
+
+        <section id="skills" class="section section-alt">
+
+            <div class="container">
+
+                <p class="section-label">
+                    CORE SKILLS
+                </p>
+
+                <h2 class="section-title">
+                    Tools and technologies I use to solve data problems.
+                </h2>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+
+                        <h3>
+                            Data & SQL
+                        </h3>
+
+                        <p>
+                            SQL · PostgreSQL · MySQL · Amazon Redshift ·
+                            Python · Statistics · Data Quality
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <h3>
+                            Business Intelligence
+                        </h3>
+
+                        <p>
+                            Power BI · DAX · Power Query · Tableau ·
+                            Looker Studio · Metabase · KPI Development
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <h3>
+                            Data Engineering
+                        </h3>
+
+                        <p>
+                            ETL Pipelines · Data Transformation ·
+                            Data Warehousing · Dimensional Modeling · APIs
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <h3>
+                            AI & Analytics
+                        </h3>
+
+                        <p>
+                            LLMs · Prompt Engineering · Natural Language-to-SQL ·
+                            FastAPI · Streamlit · Ollama
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <h3>
+                            Cloud & DevOps
+                        </h3>
+
+                        <p>
+                            AWS · GCP · BigQuery · Docker · Git · GitHub
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <h3>
+                            Business & Process
+                        </h3>
+
+                        <p>
+                            Requirements Gathering · Process Analysis ·
+                            Reporting Automation · Stakeholder Management
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             PROJECTS
+        ================================= -->
+
+        <section id="projects" class="section">
+
+            <div class="container">
+
+                <p class="section-label">
+                    FEATURED PROJECTS
+                </p>
+
+                <h2 class="section-title">
+                    Practical projects combining analytics, engineering and AI.
+                </h2>
+
+
+                <!-- FEATURED PROJECT -->
+
+                <article class="project featured-project">
+
+                    <div class="project-content">
+
+                        <p class="project-type">
+                            FEATURED PROJECT · AI & ANALYTICS
+                        </p>
+
+                        <h3>
+                            AI-Powered Energy Analytics Copilot
+                        </h3>
+
+                        <p>
+                            An AI-powered analytics platform that allows
+                            business users to ask questions about energy data
+                            using natural language.
+                        </p>
+
+                        <p>
+                            The system converts natural-language questions
+                            into SQL, validates the generated query, executes
+                            it against a PostgreSQL energy warehouse and
+                            returns structured results with AI-generated
+                            business insights.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>PostgreSQL</span>
+                            <span>Ollama</span>
+                            <span>Phi-3</span>
+                            <span>Docker</span>
+                            <span>Streamlit</span>
+
+                        </div>
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/poojanainani/energy-ai-copilot"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                View Project on GitHub →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-visual">
+
+                        <div class="terminal">
+
+                            <div class="terminal-header">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+
+                            <div class="terminal-body">
+
+                                <p class="terminal-muted">
+                                    $ ask
+                                </p>
+
+                                <p>
+                                    What was total energy usage in 2023?
+                                </p>
+
+
+                                <p class="terminal-muted">
+                                    $ generated SQL
+                                </p>
+
+                                <p>
+                                    SELECT year, SUM(consumption)...
+                                </p>
+
+
+                                <p class="terminal-muted">
+                                    $ result
+                                </p>
+
+                                <p>
+                                    2023 → Energy usage returned
+                                </p>
+
+
+                                <p class="terminal-success">
+                                    ✓ Business insight generated
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- OTHER PROJECTS -->
+
+                <div class="project-grid">
+
+
+                    <article class="project small-project">
+
+                        <p class="project-type">
+                            DATA ANALYSIS
+                        </p>
+
+                        <h3>
+                            A/B Testing Analysis
+                        </h3>
+
+                        <p>
+                            Statistical analysis of experiment results using
+                            Python, pandas and hypothesis testing to evaluate
+                            business impact.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Statistics</span>
+
+                        </div>
+
+                        <a href="#">
+                            Project details →
+                        </a>
+
+                    </article>
+
+
+                    <article class="project small-project">
+
+                        <p class="project-type">
+                            BUSINESS INTELLIGENCE
+                        </p>
+
+                        <h3>
+                            Power BI Analytics
+                        </h3>
+
+                        <p>
+                            Interactive KPI dashboards designed to transform
+                            business data into clear performance insights.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Power BI</span>
+                            <span>DAX</span>
+                            <span>Power Query</span>
+
+                        </div>
+
+                        <a href="#">
+                            Project details →
+                        </a>
+
+                    </article>
+
+
+                    <article class="project small-project">
+
+                        <p class="project-type">
+                            DATA ENGINEERING
+                        </p>
+
+                        <h3>
+                            ETL & Data Pipeline
+                        </h3>
+
+                        <p>
+                            Data pipeline work focused on extracting,
+                            transforming and preparing data for analytics
+                            and reporting.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Python</span>
+                            <span>ETL</span>
+                            <span>Cloud</span>
+
+                        </div>
+
+                        <a href="#">
+                            Project details →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             WHAT I DO
+        ================================= -->
+
+        <section id="what-i-do" class="section section-alt">
+
+            <div class="container">
+
+                <p class="section-label">
+                    WHAT I DO
+                </p>
+
+                <h2 class="section-title">
+                    From business questions to practical data solutions.
+                </h2>
+
+                <div class="skills-grid">
+
+
+                    <div class="skill-card">
+
+                        <h3>
+                            Business Intelligence
+                        </h3>
+
+                        <p>
+                            Build KPI dashboards and reporting solutions that
+                            help teams monitor performance and make better
+                            business decisions.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <h3>
+                            Data Analytics
+                        </h3>
+
+                        <p>
+                            Analyze business data with SQL and Python to
+                            identify trends, patterns and actionable
+                            opportunities.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <h3>
+                            Analytics Engineering
+                        </h3>
+
+                        <p>
+                            Design data transformations, analytical models
+                            and reliable workflows for reporting and
+                            downstream analytics.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <h3>
+                            AI-Powered Analytics
+                        </h3>
+
+                        <p>
+                            Explore how LLMs and natural-language interfaces
+                            can make business data easier to query,
+                            understand and use.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             CONTACT
+        ================================= -->
+
+        <section id="contact" class="contact-section">
+
+            <div class="container contact-content">
+
+                <p class="section-label">
+                    GET IN TOUCH
+                </p>
+
+                <h2>
+                    Let's talk about data.
+                </h2>
+
+                <p>
+                    I'm open to opportunities in Data Analytics,
+                    Business Intelligence, Product Analytics,
+                    Business Insights and Analytics Engineering.
+                </p>
+
+                <div class="contact-links">
+
+                    <a href="mailto:pooja.nainani01@gmail.com">
+                        Email
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/poojanainani/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+
+                    <a href="https://github.com/poojanainani"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer>
+
+        <div class="container footer-content">
+
+            <p>
+                © 2026 Pooja Nainani
+            </p>
+
+            <p>
+                Data Analyst · Business Intelligence · Data & AI
+            </p>
+
+        </div>
+
+    </footer>
+
 
 </body>
+
 </html>
