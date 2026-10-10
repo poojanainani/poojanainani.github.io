@@ -1193,3 +1193,19 @@ h3 {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Align the About section heading vertically */
+#experience .section-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+#experience .section-heading .eyebrow {
+  margin: 0;
+}
+
+#experience .section-heading h2 {
+  margin: 0;
+}
